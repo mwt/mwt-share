@@ -127,3 +127,7 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# public folder
+/public_html/f/
+/public_html/l/

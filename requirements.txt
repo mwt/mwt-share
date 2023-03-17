@@ -1,0 +1,6 @@
+Flask_Migrate
+alembic
+requests
+Flask
+flask_sqlalchemy
+python_magic
