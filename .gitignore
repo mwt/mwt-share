@@ -134,5 +134,5 @@ dmypy.json
 
 # passenger/litespeed
 passenger_wsgi.py
-passenger_wsgi.py
+public_html/.htpasswd
 tmp/
