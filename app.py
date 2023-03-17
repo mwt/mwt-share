@@ -131,7 +131,7 @@ def shorten_url(url: str):
     folder_path.mkdir(exist_ok=False)
 
     # Make an .htaccess file to redirect to the url
-    redirect_content = f"RewriteEngine on\nRewriteRule ^(.*)$ {url} [R=302,L]"
+    redirect_content = f"RewriteEngine on\nRewriteRule ^(.*)$ {url} [R=307,L]"
 
     # Write the .htaccess file
     with open(Path(folder_path, ".htaccess"), "w", encoding="utf8") as f:
@@ -182,6 +182,6 @@ def get_redr(path):
         ) as f:
             # This is a silly hack to get the url
             # Obviously, I should use re, but don't feel like loading it
-            return redirect(f.read()[36:-10], code=302)
+            return redirect(f.read()[36:-10], code=307)
     else:
         abort(405, "Only GET requests are allowed")
