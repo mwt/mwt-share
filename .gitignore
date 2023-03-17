@@ -131,3 +131,8 @@ dmypy.json
 # public folder
 /public_html/f/
 /public_html/l/
+
+# passenger/litespeed
+passenger_wsgi.py
+passenger_wsgi.py
+tmp/
